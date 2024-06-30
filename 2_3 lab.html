@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2_3 Lab</title>
+</head>
+<body>
+  <h1>2_3 Lab Starter Template: Working with Images</h1>
+  <p>Use this template file to begin working on Lab Assignment 2_3.</p>
+  
+ 
+
+  <h1></h1>
+  <div>
+  <img src="./assets/images/blue_circle.png" alt="A Blue Circle" width="300" height="300">
+  </div>
+
+  <div>
+  <img src="./assets/images/red_circle.png" alt="A Blue Circle" width="300" height="300">
+  </div>
+
+
+  <figure class="shape">
+    <figcaption>work of art</figcaption>
+    <img src="./assets/images/purple_square.png">
+  </figure>
+
+<h1>Extra challenge </h1>
+<p>
+  Use the picture element to display the blue_circle when the browser window is wider than
+  600px, otherwise display the purple_square instead.</p>
+
+ 
+
+  <picture>
+    <source media="(min-width:600px)" srcset="./assets/images/blue_circle.png" alt="Blue Circle" width="300" height="300">
+    <source media="(min-width:400px)" srcset="./assets/images/purple_square.png" alt="Purple Square" width="300" height="300">
+    <img src="./assets/images/purple_square.png" alt="Purple Square" width="300" height="300">
+  </picture>
+
+</body>
+</html>
