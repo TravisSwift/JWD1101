@@ -1,0 +1,17 @@
+* {
+    text-decoration: none;
+   
+}
+
+.title {
+    color: green;
+}
+
+a {
+    color:red;
+}
+
+img{
+    border: 2px solid purple;
+    
+}
