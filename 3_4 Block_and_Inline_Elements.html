@@ -6,20 +6,89 @@
     <title>3_4 Block and Inline Elements</title>
 </head>
 <body>
-    <div>
-        <h1><a href="index.html">Home</a></h1>
-    </div>
+
+    <h1><a href="index.html">Home</a></h1>
+    
    <style>
-    div {
+    div, span {
         background-color: rgb(246, 219, 100);
     }
+    table, th, td {
+  border:1px solid black;
+}
    </style> 
 
-<!-- Text inside a div and outside a div -->
+<!-- Text inside a div, span and outside a div -->
 Outside a div.  
 
 <div>Inside a div</div>
+<br>
+<span>Inside a span</span>
 
+<h2>Block Elements</h2>
+<p>A block element stretches from left-to-right and takes up all of the space that it can on
+    the page. p is another example of a block element. When you use a p or a div by itself, nothing can be placed
+        to the right of it and we move down to the next line of our page.</p>
+
+    <ul>Block Elements
+        <li>p</li>
+        <li>div</li>
+        <li>table</li>
+        <li>canvas</li>
+        <li>figure</li>
+        <li>ul</li>
+        <li>ol</li>
+        <li>li</li>
+        <li>video</li>
+        <li>form</li>
+    </ul>
+
+<h2>Inline Elements</h2>
+
+<p>An inline element only takes up as much space as it needs to. The td table cell is an
+    example of an inline element. We were able to put multiple td side by side from left
+    to right without having to move down to the next line. </p>
+
+    <table>
+        <tr>
+        <th>Inline text cell data in a table header</th>
+        <th>Inline</th>
+        <th>Inline</th>
+        <th>Inline</th>
+        <th>Inline</th>
+        <th>Inline</th>
+        <th>Inline</th>
+        <th>Inline</th>
+        <th>Inline</th>
+        <th>Inline</th>
+        <th>Inline</th>
+        <th>Inline</th>
+        <th>Inline</th>
+        </tr><tr>
+            <td>Inline</td>
+            <td>Inline</td>
+            <td>Inline</td>
+            <td>Inline</td>
+            <td>Inline</td>
+            <td>Inline</td>
+            <td>Inline</td>
+            <td>Inline</td>
+            <td>Inline</td>
+            <td>Inline</td>
+
+        </tr>
+    </table>
+
+    <p>span is the most common inline element used in HTML. span is an empty
+        container like div, only it follows the inline rules and does not take up all the
+        remaining space on a page. The height and width of inline elements cannot be adjusted
+        by CSS through normal means. </p>
+
+    <ul>Inline Elements</ul>
+        <li>span</li>
+        <li>img</li>
+        <li>button</li>
+        <li>a</li>
 
 </body>
 </html>
