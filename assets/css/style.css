@@ -1,9 +1,4 @@
-* {
-    text-decoration: none;
-   
-}
-
-.title {
+/* .title {
     color: green;
 }
 
@@ -14,4 +9,111 @@ a {
 img{
     border: 2px solid purple;
     
-}
+} */
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(133,133,215);
+    background: linear-gradient(90deg, rgba(133,133,215,1) 0%, rgba(60,60,106,1) 35%, rgba(22,22,184,1) 100%);
+    margin: 1em;
+  }
+  
+  main{
+    display:flex;
+  
+  }
+  
+  /* Style the header */
+  header {
+    background-color: rgb(0, 0, 0);
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+  
+  /* Create two columns/boxes that floats next to each other */
+  nav {
+    width: 20%;
+    background: #ccc;
+    padding: 20px;
+  }
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 28px;
+  }
+  
+  nav ul li{
+    padding: .2em;
+  }
+  
+  a{
+    text-decoration: none;
+    text-shadow: black;
+  }
+  
+  a:hover{
+    color: rgb(8, 155, 235)
+  }
+  
+  
+  article {
+    padding: 20px;
+    width: 80%;
+    background-color: #f1f1f1;
+  }
+  
+  /* Clear floats after the columns */
+  section:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #000;
+    padding: 10px;
+    text-align: center;
+    color: yellowgreen;
+  }
+  
+  h1{
+    font-size: 3em;
+    color:rgb(27, 4, 44)
+  
+  }
+  
+  @media (max-width: 700px) {
+    h1{
+      font-size: 2em;
+    
+    }
+  
+    nav ul {
+      font-size: 1.2em;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    h1{
+      font-size: 1.2em;
+    
+    }
+  
+  
+    /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1em;
+  }
+  
+  }
