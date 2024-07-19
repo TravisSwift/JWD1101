@@ -4,10 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>4_2 Lab</title>
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
 </head>
 <body>
 
+      <!-- Navigation Links -->
       <div>
     <ul>
       <li><a href="./index.html">Coursework</a></li>                      
@@ -17,23 +18,43 @@
   <h1>4_2 Lab: Signup Form</h1>
   <p>Use this file as a starting template for Lab 4_2</p>
 
-            <!-- Navigation Links -->
-
-                <!-- Navigation Links -->
-  <div>
-    <ul>
-      <li><a href="./index.html">Coursework</a></li>                      
-    </ul>
-  </div>
+            
 
 
   <figure><figcaption>Recreate this signup form</figcaption></p><a href="./assets/images/4_2_signup.png" target="_blank"><img src="./assets/images/4_2_signup.png" width="300" height="300"></a></figure>  
 
     <div>
         <h2>The recreation: </h2>
-        <form method="post" >
-            <label ></label>
+</div>
+<div>
+    <h1>Signup</h1>
+    <p>Complete the form to sign up for a free account.</p>
+        <form method="post" action="https://www.hashemian.com/tools/form-post-tester.php">
+
+            <label for="firstName">First Name</label><br>
+            <input type="text" id="firstName" name="FirstName"><br>
+
+            <label for="lastName">Last Name</label><br>
+            <input type="text" id="lastName" name="LastName"><br>
+
+            <label for="emailAddress">Email Address</label><br>
+            <input type="text" id="emailAddress" name="EmailAddress"><br>
+
+            <label for="birthday">Birthday</label><br>
+            <input type="text" id="birthday" name="Birthday"><br>
+
+            <label for="telephone">Telephone (xxx-xxx-xxxx)</label>
+            <input type="text" id="telephone" name="Telephone"><br>
+
+            <label for="userName">User Account Name</label>
+            <input type="text" id="userName" name="UserName"><br>
+
+            <label for="password">Password</label>
+            <input type="text" id="password" name="Password"><br><br>
             
+            <input type="submit" value="Submit">
+
+
         </form>
     </div>
 
