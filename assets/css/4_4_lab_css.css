@@ -1,0 +1,74 @@
+.example1 {
+    border-style: solid;
+    margin: 20px;
+    background-color: lightblue;
+}
+
+.example2 {
+    border-style: dotted;
+    margin: 20px;
+    background-color: lightgreen;
+
+}
+
+.example3 {
+    border-style: inset;
+    margin: 20px;
+    background-color: lightpink;
+}
+
+#toggle {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background-color: lightsalmon;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    margin-left: 32px;
+}
+
+label::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transofrms 0.3s;
+}
+
+#toggle:checked + label {
+    background-color: #2196F3;
+
+}
+
+#toggle:checked + label::before {
+    transform: translateX(20px);
+}
+
+button:active {
+    background-color: red;
+    padding: 10px;
+ 
+}
+button2:active {
+    background: red;
+}
+
+ .color {
+    background-color: white;
+    color: black;
+ }
+
+    .color:hover {
+        background: black;
+        color: white;
+    }
+ 
