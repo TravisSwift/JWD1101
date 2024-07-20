@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>4_2 Lab</title>
   <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+   <style>
+    .form {
+      padding: 0px 10px 50px 10px;
+    }
+   </style>
 </head>
 <body>
 
@@ -18,44 +23,47 @@
   <h1>4_2 Lab: Signup Form</h1>
   <p>Use this file as a starting template for Lab 4_2</p>
 
-            
-
-
+            <!-- Image of assignment -->
   <figure><figcaption>Recreate this signup form</figcaption></p><a href="./assets/images/4_2_signup.png" target="_blank"><img src="./assets/images/4_2_signup.png" width="300" height="300"></a></figure>  
 
+    
     <div>
         <h2>The recreation: </h2>
 </div>
+          <!-- My version of the form -->
 <div>
     <h1>Signup</h1>
     <p>Complete the form to sign up for a free account.</p>
-        <form method="post" action="https://www.hashemian.com/tools/form-post-tester.php">
+        <form class="form" method="post" action="https://www.hashemian.com/tools/form-post-tester.php">
 
-            <label for="firstName">First Name</label><br>
-            <input type="text" id="firstName" name="FirstName"><br>
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="FirstName"><br><br>
 
-            <label for="lastName">Last Name</label><br>
-            <input type="text" id="lastName" name="LastName"><br>
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="LastName"><br><br>
 
-            <label for="emailAddress">Email Address</label><br>
-            <input type="text" id="emailAddress" name="EmailAddress"><br>
+            <label for="emailAddress">Email Address</label>
+            <input type="text" id="emailAddress" name="EmailAddress"><br><br>
 
-            <label for="birthday">Birthday</label><br>
-            <input type="text" id="birthday" name="Birthday"><br>
+            <label for="birthday">Birthday</label>
+            <input type="text" id="birthday" name="Birthday"><br><br>
 
             <label for="telephone">Telephone (xxx-xxx-xxxx)</label>
-            <input type="text" id="telephone" name="Telephone"><br>
+            <input type="text" id="telephone" name="Telephone"><br><br>
 
             <label for="userName">User Account Name</label>
-            <input type="text" id="userName" name="UserName"><br>
+            <input type="text" id="userName" name="UserName"><br><br>
 
             <label for="password">Password</label>
-            <input type="text" id="password" name="Password"><br><br>
+            <input type="text" id="password" name="Password">
             
             <input type="submit" value="Submit">
 
-
         </form>
+
+        <!-- POST results from submitting form -->
+        <h2>POST results</h2>
+        <a href="./assets/images/4_2_POST_large.png" target="_blank"> <img src="./assets/images/4_2_POST.png" width="300" height="300"></a>
     </div>
 
 
