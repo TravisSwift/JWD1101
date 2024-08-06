@@ -1,0 +1,44 @@
+
+ p {
+    background-color: transparent;
+ }
+
+h2 {
+    background-color: lightgray;
+}
+
+h3 {
+    background-color: lightpink;
+}
+
+#id-one {
+    background-color: lightblue;
+}
+
+.class-one {
+    background-color: yellow;
+}
+
+#id-two {
+    background-color: lightsalmon;  // Apply color to the entire div
+}
+
+#id-two p, #id-two span {
+    background-color: lightsalmon;  // Ensures text background matches div if needed
+}
+
+#class-two {
+    background-color: green;  // Apply color to the entire div
+}
+
+#class-two p, #class-two span {
+    background-color: green;  // Ensures text background matches div if needed
+}
+
+#id-three {
+    background-color: red;
+}
+
+#class-one  {
+    background-color: yellow;
+}
