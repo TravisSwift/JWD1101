@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <title>1.3 Assignment Using Mutliple Classes </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="html, training, lessons, templates">
+
+  <style>
+    body, .background {
+      min-height: 100vh;
+    }
+
+    .crimson {
+      background-color: rgb(133, 11, 35);
+    }
+
+    .safe-green {
+      background-color: rgb(11, 133, 17);
+    }
+
+    .soft-blue {
+      background-color: rgba(117, 175, 209, .8);
+
+    }
+
+    .caution-yellow {
+      background-color: rgb(224, 215, 82);
+    }
+
+    .white-text {
+      color: white;
+    }
+
+    .padding-medium {
+      padding: 1em;
+    }
+
+    .padding-light {
+      padding: .5em;
+    }
+
+    .border-none {
+      border: none;
+    }
+
+    .border-black {
+      border: 4px solid black;
+    }
+
+    .text-large {
+      font-size: 1.2em;
+    }
+
+    .text-medium {
+      font-size: 1.1em;
+    }
+
+    .text-question {
+      font-style: italic;
+      font-weight: bold;
+    }
+
+    .background {
+      background-image: linear-gradient(-45deg, #FFF, #c7c7c7);
+    }
+
+    .basic-list {
+      line-height: 1.6em;
+      list-style-position: inside;
+      width: 350px;
+    }
+
+    .flexbox-row {
+      display: flex
+    }
+
+    .flexbox-row button {
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1 id="h1"> Using Multiple Classes</h1>
+
+
+  <p id="p1">
+    We can assign multiple classes to a single element. It will have all of the properties of
+    each class. We can use multiple classes to make highly customized elements without re-writing
+    the same CSS code over again. Using multiple classes can make our CSS very flexible and easy to understand.
+
+  </p>
+
+  <p id="p2">
+    In the case where properties of one class conflict with properties of another class, the class that appears
+    later in the CSS file will win. The exception to this is when a class using the !important rule. Additionally,
+    class rules will always lose to ID rules.
+  </p>
+
+  <div id="d1">
+
+    <ul id="u1">
+      <h3>Reasons for using mutliple classes</h3>
+      <li>Reuseability</li>
+      <li>Customization</li>
+      <li>Classes names can be more meaningful</li>
+      <li> Helps create a consistent look and feel</li>
+
+    </ul>
+
+    <ul id="u2">
+      <h3>Reasons to avoid multiple classes</h3>
+      <li>Conflicts between class properties can be difficult to troubleshoot</li>
+      <li>Requires careful ordering of the Style Sheet</li>
+      <li>Requires more planning </li>
+      <li>HTML becomes "heavy" to read </li>
+    </ul>
+  </div>
+
+  <p id="p3">Do you agree that using multiple classes is a good way to structure CSS code? </p>
+
+  <div id="d2">
+    <button id="b1"> I agree</button>
+    <button id="b2"> I disagree </button>
+  </div>
+
+
+</body>
+
+</html>
