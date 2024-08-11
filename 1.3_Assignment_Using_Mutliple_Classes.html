@@ -8,7 +8,7 @@
   <meta name="keywords" content="html, training, lessons, templates">
 
   <style>
-    body, .background {
+    body {
       min-height: 100vh;
     }
 
@@ -79,52 +79,55 @@
     .flexbox-row button {
       margin: 10px;
     }
+
+ 
+
   </style>
 </head>
 
-<body>
+<body class="background">
 
-  <h1 id="h1"> Using Multiple Classes</h1>
+  <h1 id="h1" class="padding-medium border-black crimson white-text"> Using Multiple Classes</h1>
 
 
-  <p id="p1">
+  <p id="p1" class="caution-yellow padding-medium text-large">
     We can assign multiple classes to a single element. It will have all of the properties of
     each class. We can use multiple classes to make highly customized elements without re-writing
     the same CSS code over again. Using multiple classes can make our CSS very flexible and easy to understand.
 
   </p>
 
-  <p id="p2">
+  <p id="p2" class="caution-yellow text-large padding-medium">
     In the case where properties of one class conflict with properties of another class, the class that appears
     later in the CSS file will win. The exception to this is when a class using the !important rule. Additionally,
     class rules will always lose to ID rules.
   </p>
 
-  <div id="d1">
+  <div id="d1" class="flexbox-row">
 
-    <ul id="u1">
-      <h3>Reasons for using mutliple classes</h3>
-      <li>Reuseability</li>
-      <li>Customization</li>
-      <li>Classes names can be more meaningful</li>
-      <li> Helps create a consistent look and feel</li>
+    <ul id="u1" class="safe-green white-text basic-list padding-light border-black">
+      <h3 class="padding-light">Reasons for using mutliple classes</h3>
+      <li class="text-medium">Reuseability</li>
+      <li class="text-medium">Customization</li>
+      <li class="text-medium">Classes names can be more meaningful</li>
+      <li class="text-medium"> Helps create a consistent look and feel</li>
 
     </ul>
 
-    <ul id="u2">
-      <h3>Reasons to avoid multiple classes</h3>
-      <li>Conflicts between class properties can be difficult to troubleshoot</li>
-      <li>Requires careful ordering of the Style Sheet</li>
-      <li>Requires more planning </li>
-      <li>HTML becomes "heavy" to read </li>
+    <ul id="u2" class="crimson white-text basic-list padding-light border-black">
+      <h3 class="padding-light">Reasons to avoid multiple classes</h3>
+      <li class="text-medium">Conflicts between class properties can be difficult to troubleshoot</li>
+      <li class="text-medium">Requires careful ordering of the Style Sheet</li>
+      <li class="text-medium">Requires more planning </li>
+      <li class="text-medium">HTML becomes "heavy" to read </li>
     </ul>
   </div>
 
-  <p id="p3">Do you agree that using multiple classes is a good way to structure CSS code? </p>
+  <p id="p3" class="soft-blue text-large padding-medium text-question">Do you agree that using multiple classes is a good way to structure CSS code? </p>
 
-  <div id="d2">
-    <button id="b1"> I agree</button>
-    <button id="b2"> I disagree </button>
+  <div id="d2" class="flexbox-row">
+    <button id="b1" class="safe-green white-text padding-light text-medium border-none"> I agree</button>
+    <button id="b2" class="crimson white-text padding-light text-medium border-none"> I disagree </button>
   </div>
 
 
