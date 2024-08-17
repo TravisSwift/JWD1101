@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html, training, lessons, templates">
+    <meta lang="en-US">
+    
+    <title>2_1 Lab Assigment</title>
+
+    <style>
+      .class-one {
+        background-color: lightseagreen;
+        padding: 2em;
+      }
+        /*Sets the background-color property of the <p> elements that belong to the “class-one”
+            elements to the value darkgreen by using a combinator */
+      .class-one p {
+        background-color: darkgreen;        
+      }
+
+
+      .class-two{
+        background-color: lightskyblue;
+        padding: 2em;
+      }
+
+        /* Set the background-color property of all of the <li> elements that belong to the “class-two” element to the value lightpink.  */
+      .class-two li{
+        background-color: lightpink;
+      }
+
+      /* Set the background-color property of the <span> elements that belong to the <li> elements that belong to the “class-two” elements to the value gray.  */
+
+        .class-two span{
+        background-color: gray;
+      }
+
+      /* Set the background-color property of the <div> element that comes directly after class-two to the value orange. */
+
+        .class-two + div{
+        background-color: orange;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <h1>2_1 Lab  Assignment Combinators</h1>
+    <p>Use this Starter File to Complete Lab Assigment 2_1</p>
+
+    <div class="class-one">
+      <p>All paragraph elements of the div with class-one should have a background color of darkgreen </p>
+      <p>All paragraph elements of the div with class-one should have a background color of darkgreen </p>
+      <span>Other elements inside of the class-one class should have the default lightseagreen color.</span>
+      <span>Other elements inside of the class-one class should have the default lightseagreen color.</span>
+    </div>
+
+    <ul class="class-two">
+      <li>List items should have a background color of darkblue but <span> but these span elements should be in gray </span> </li>
+      <li>List items should have a background color of darkblue but <span> but these span elements should be in gray </span> </li>
+      <li>List items should have a background color of darkblue but <span> but these span elements should be in gray </span> </li>
+    </ul>
+
+    <div>
+      <p>The elements of this div that follows class-two should have a background color of orange</p>
+    </div>
+
+    <div>
+      <p>This div and it's elements should have default, plain styling.</p>
+    </div>
+
+  </body>
+
+
+</html>
