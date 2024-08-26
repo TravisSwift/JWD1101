@@ -1,9 +1,10 @@
 
 html, body{
-  margin: 0; /* Clear inherited margin. */
-  padding: 0; /* Clear inherited padding. */ 
-  /* Add more styles here. See Lab instructions.  */
-
+  margin: 0;
+  padding: 0;
+  font-family: Segoe UI', Tahoma, Geneva, Verdana, sans-serif';
+  background: rgb(12, 12, 12);
+  color: gray;
 }
 
 /* Clear inherited element styles. */
@@ -19,7 +20,7 @@ body {
   background-image: url("/assets/images/pexels-suludan-diliyaer-596750.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: auto;
 }
 
 h1 {  
