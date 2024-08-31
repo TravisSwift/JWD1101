@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html, training, lessons, templates">
+    <meta lang="en-US">
+    
+    <title>2_3 Pseduo Lab</title>
+  <style>
+        nav{
+          background-color: lavender;
+        }
+        /*  background color change on hover for list items*/
+        li:hover {
+            background-color: gold;
+        }
+
+        /*  background color change on focus for input fields*/
+        input:focus {
+            background-color: powderblue;
+        }
+
+        /* background color change on hover for buttons*/
+        .btn:hover {
+            background-color: lightgreen;
+        }
+
+        /* background color change on hover for sections*/
+        section:hover {
+            background-color: linen;
+        }
+
+        section:before { 
+            background-color: cornflowerblue;   
+            min-height: 25px;
+            display: block;
+            content: ' '
+        }
+
+        nav:before {
+            background-color: cornflowerblue;   
+            min-height: 25px;
+            display: block;
+            content: ' '
+        }
+  </style>
+ 
+  </head>
+
+ 
+
+  <body>
+    <h1>2_3 Lab Pseduo Classes</h1>
+    <p>Use this Starter File to Complete Lab 2_3</p>
+
+    <nav>
+      <h1>Acme Web Site</h1>
+      <ul>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <section>
+      <h1>Sign up for Special Deals</h1>
+      <p>Use The Sign Up Form below to sign up for our deal of the week!</p>
+    </section>
+
+    <section>
+      <h2>Sign Up Now</h2>
+      <form action="">
+        <label for="firstname">First Name</label>
+        <input type="text" id="firstname" name="firstname">
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lastname" name="lastname">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email">
+        <label for="dob">Birth date</label>
+        <input type="date" id="dob" name="dob">
+        <input class="btn" type="submit">
+      </form>
+
+    </section>
+
+  </body>
+
+
+</html>
