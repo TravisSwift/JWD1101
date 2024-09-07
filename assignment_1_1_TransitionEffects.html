@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="html, training, lessons, templates">
+  <meta lang="en-US">
+  <title>Transform Example</title>
+
+  <style>
+    /* Starting CSS. Does NOT Need to be modifed. */
+
+    .flex-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: flex-start;
+    }
+
+    .employee-card {
+      background-color: rgb(215, 218, 228);
+      box-shadow: 4px 4px 4px rgb(82, 82, 82);
+      margin: .5em;
+    }
+
+    .employee-photo {
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      margin: .3em;
+      border: 2px solid black;
+    }
+
+    .employee-title,
+    .employee-name {
+      margin: .2em .2em;
+    }
+
+
+    /* The visible top element that is always shown. */
+    .visible-top {
+      display: flex;
+      flex-direction: row;
+      padding: .5em;
+      margin-bottom: 0px;
+      border: 2px solid black;
+      font-size: 1.5em;
+      align-items: flex-start;
+    }
+
+    /*Hide the Checkbox */
+    .visible-top~input {
+      display: none;
+    }
+
+    /* Make text-body follow parent with inhert. Hide text overflow. */
+    .text-body {
+      position: absolute;
+      overflow: hidden;
+      height: inherit;
+      margin: inherit;
+    }
+
+    /*Italize employee quote  */
+    .quote {
+      font-style: italic;
+    }
+
+    /*The wrapper for the expand/collapse transition.  */
+    .wrapper {
+      position: relative;
+      box-sizing: border-box;
+      height: 0px;
+      margin: 0px;
+      border: 2px solid black;
+      padding: 1em 1em 0 1em;
+      background-color: lightgray;
+    }
+
+    /*Begin writing your CSS Here  */
+
+  </style>
+
+</head>
+
+<body>
+
+  <h1>Assignment 4_1 Employee Card Transitions</h1>
+  <div class="flex-row">
+
+    <div class="employee-card">
+      <label for="toggle" class="visible-top">
+        <div>
+          <img class="employee-photo" src="photos//ai-photo-alice.jpeg" alt="">
+        </div>
+        <div>
+          <h5 class="employee-name">Alice Little</h5>
+          <h6 class="employee-title">Frontend Web Developer</h6>
+        </div>
+      </label>
+      <input type="checkbox" id="toggle">
+      <div class="wrapper" id="wrapper-transition">
+        <div class="text-body">
+          <p>Email: <span > alittle@smart.web </span></p>
+          <p>Phone: (123)123-9991</p>
+          <p class="quote"> "I love working on new projects!"</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="employee-card employee-card-transition">
+      <label for="toggle2" class="visible-top">
+        <div>
+          <img class="employee-photo" src="photos//ai-photo-james.jpeg" alt="">
+        </div>
+        <div>
+          <h5 class="employee-name">James Allen</h5>
+          <h6 class="employee-title">Backend Web Developer</h6>
+        </div>
+      </label>
+      <input type="checkbox" id="toggle2">
+      <div class="wrapper" id="wrapper-transition2">
+        <div class="text-body">
+          <p>Email: <span>jallen@smart.web </span></p>
+          <p>Phone: (123)123-7779</p>
+          <p class="quote">"I just learned Node.JS."</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="employee-card employee-card-transition">
+      <label for="toggle3" class="visible-top">
+        <div>
+          <img class="employee-photo" src="photos//ai-photo-lindsay.jpeg" alt="">
+        </div>
+        <div>
+          <h5 class="employee-name">Lindsey Shoals</h5>
+          <h6 class="employee-title">UX/UI DesignerDeveloper</h6>
+        </div>
+      </label>
+      <input type="checkbox" id="toggle3">
+      <div class="wrapper" id="wrapper-transition3">
+        <div class="text-body">
+          <p>Email:<span class>lshoals@smart.web</span> </p>
+          <p>Phone: (123)123-8884</p>
+          <p class="quote">"I'm always excited to learn new skills."</p>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+</body>
