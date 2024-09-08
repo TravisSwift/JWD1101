@@ -78,7 +78,58 @@
       background-color: lightgray;
     }
 
+ 
     /*Begin writing your CSS Here  */
+
+
+    .employee-card-transition {
+      transition-property: background-color;
+      transition-duration: 1s;
+
+    }
+
+    .employee-card-transition:hover {
+      background-color: rgb(148, 202, 134);
+    }
+
+    #wrapper-transition {
+      transition-property: height;
+      transition-duration: 1s;
+    }
+
+    #wrapper-transition2 {
+      transition-property: height;
+      transition-duration: 1s;
+    }
+
+    #wrapper-transition3 {
+      transition-property: height;
+      transition-duration: 1s;
+    }
+
+
+    #toggle:checked~#wrapper-transition {
+      height: 150px;
+    }
+
+    #toggle2:checked~#wrapper-transition2 {
+      height: 150px;
+    }
+
+    #toggle3:checked~#wrapper-transition3 {
+      height: 150px;
+    }
+
+
+ .email-transition {
+  transition-property: color;
+  transition-duration: 1s;
+ }
+
+.email-transition:hover {
+  color: blue;
+}
+
 
   </style>
 
@@ -89,10 +140,11 @@
   <h1>Assignment 4_1 Employee Card Transitions</h1>
   <div class="flex-row">
 
-    <div class="employee-card">
+    <div class="employee-card employee-card-transition">
+
       <label for="toggle" class="visible-top">
         <div>
-          <img class="employee-photo" src="photos//ai-photo-alice.jpeg" alt="">
+          <img class="employee-photo" src="./assets/images/ai-photo-alice.jpeg" alt="">
         </div>
         <div>
           <h5 class="employee-name">Alice Little</h5>
@@ -102,17 +154,18 @@
       <input type="checkbox" id="toggle">
       <div class="wrapper" id="wrapper-transition">
         <div class="text-body">
-          <p>Email: <span > alittle@smart.web </span></p>
+          <p>Email: <span class="email-transition"> alittle@smart.web </span></p>
           <p>Phone: (123)123-9991</p>
           <p class="quote"> "I love working on new projects!"</p>
         </div>
       </div>
     </div>
 
+
     <div class="employee-card employee-card-transition">
       <label for="toggle2" class="visible-top">
         <div>
-          <img class="employee-photo" src="photos//ai-photo-james.jpeg" alt="">
+          <img class="employee-photo" src="./assets/images/ai-photo-james.jpeg" alt="">
         </div>
         <div>
           <h5 class="employee-name">James Allen</h5>
@@ -122,7 +175,7 @@
       <input type="checkbox" id="toggle2">
       <div class="wrapper" id="wrapper-transition2">
         <div class="text-body">
-          <p>Email: <span>jallen@smart.web </span></p>
+          <p>Email: <span class="email-transition">jallen@smart.web </span></p>
           <p>Phone: (123)123-7779</p>
           <p class="quote">"I just learned Node.JS."</p>
         </div>
@@ -132,7 +185,7 @@
     <div class="employee-card employee-card-transition">
       <label for="toggle3" class="visible-top">
         <div>
-          <img class="employee-photo" src="photos//ai-photo-lindsay.jpeg" alt="">
+          <img class="employee-photo" src="./assets/images/ai-photo-lindsay.jpeg" alt="">
         </div>
         <div>
           <h5 class="employee-name">Lindsey Shoals</h5>
@@ -142,7 +195,7 @@
       <input type="checkbox" id="toggle3">
       <div class="wrapper" id="wrapper-transition3">
         <div class="text-body">
-          <p>Email:<span class>lshoals@smart.web</span> </p>
+          <p>Email:<span class="email-transition">lshoals@smart.web</span> </p>
           <p>Phone: (123)123-8884</p>
           <p class="quote">"I'm always excited to learn new skills."</p>
 
