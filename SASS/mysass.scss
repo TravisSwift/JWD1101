@@ -1,0 +1,8 @@
+$my-bg-color: #00aaff;
+$my-text-color: #fffb00;
+
+.my-sass-class {
+    background-color: $my-text-color;
+    color: $my-text-color;
+    font-size: 3 * 12;
+}
