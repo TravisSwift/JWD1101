@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Viewport is Required -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+  <!-- CSS only -->
+  <link rel="stylesheet" href="./resources/bootstrap-5.1.0-dist/css/bootstrap-grid.css">
+  <title>Basic Bootstrap Site Example</title>
+   
+
+  <style>
+    /* Custom CSS. Does not need to be editted */
+
+    .custom {
+      background-color: #9e1414;
+      color: white;
+      border: 2px solid white;
+      text-align: center;
+    }
+
+    .custom-blue {
+      background-color: #142d9e;
+      color: white;
+      border: 2px solid white;
+      text-align: center;
+    }
+
+    .custom-green {
+      background-color: #087e25;
+      color: white;
+      border: 2px solid white;
+      text-align: center;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <h1>Assignment 3_2 Bootstrap Grid</h1>
+
+  <!-- TASK 1 Create a row of 2 6-unit columns on all device screens  -->
+  <div class="container">
+    <div class="row">
+      <div class="col-6 custom">6 Units </div>
+      <div class="col-6 custom">6 Units  </div>
+    </div>
+  </div>
+
+  <!-- TASK 2 Create a row of 2 columns. The first column will be 8 units. Second wll be 4 units.
+      Applies to all devices  -->
+  <div class="container">
+    <div class="row">
+      <div class="col-8 custom" >8 Units </div>
+      <div class="col-4 custom">4 Units  </div>
+    </div>
+  </div>
+
+  <!-- TASK 3 Create a row of 3 4-unit columns on medium device screens and above.  -->
+  <div class="container">
+    <div class="row">
+      <div class="col-4 custom">4 Units Medium</div>
+      <div class="col-4 custom">4 Units Medium </div>
+      <div class="col-4 custom">4 Units Medium</div>
+    </div>
+  </div>
+
+  <!-- TASK 4 Create a row of 3 4-unit columns on medium device screens and above.  -->
+  <div class="container">
+    <div class="row">
+      <div class="col-3 custom-green">3 Units Large</div>
+      <div class="col-3 custom-green">3 Units Large </div>
+      <div class="col-3 custom-green">3 Units Large</div>
+      <div class="col-3 custom-green">3 Units Large</div>
+    </div>
+  </div>
+
+  <!-- TASK 5 Create a row with 1 column 3-units wide, aligned to the end..  -->
+  <div class="container">
+    <div class="row justify-content-end">
+      <div class="col-lg-3 custom-blue">3 Units Large</div>
+    </div>
+  </div>
+
+  <!-- TASK 6 Create a row with 3 column 2-units wide, spaced evenly..  -->
+  <div class="container">
+    <div class="row justify-content-evenly">
+      <div class="col-2 custom-blue">3 Units</div>
+      <div class="col-2 custom-blue">3 Units</div>
+      <div class="col-2 custom-blue">3 Units</div>
+    </div>
+  </div>
+
+  <!-- TASK 7 2 Columns, 4 units wide with gap between -->
+   
+    <div class="container">
+      <div class="row justify-content-between">
+      <p class="col-4 custom">Left</p>
+      <p class="col-4 custom">Right </p>
+    </div>
+  </div>
+
+    <!-- TASK 8 1 Columns, 6 units wide center -->
+    <div class="container">
+        <div class="row justify-content-center">
+      <p class="col-6 custom-green">Center</p>
+    </div>
+  </div>
+</body>
+
+</html>
