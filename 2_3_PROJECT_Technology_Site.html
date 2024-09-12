@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+    :root {
+        background-color: #eeee;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+background-color: #18437E;
+margin: 0;
+padding: 0;
+
+}
+
+.navbar ul {
+    display: grid;
+    text-decoration: none;
+    list-style: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    margin: 2em;
+    padding: 2em;
+    align-items: center;
+    box-shadow: .4em .4em 5px rgba(0,0,0,0.4);
+
+}
+
+.navbar ul li {
+    text-decoration: none;
+    background-color: #eee;
+    margin: .5em .5em;
+    text-align: center;
+    padding: .5em;
+    font-size: 1.3m;
+    border-radius: 2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 3fr 1ft;
+    grid-column-gap: 1em;
+    margin: 3em 2em;
+}
+
+
+.column_1 {
+    background-image: url(assets/images/closeup-photo-of-black-and-blue-keyboard.jpg);
+    color: white;
+    background-size: cover;
+    padding: 1em 3em;
+    box-shadow: .4em .4em 5px rgba(0,0,0,0.4);
+}
+
+.column_1 h1 {
+    color: white;
+    font-size: 3em;
+}
+
+.column_1 p {
+    color: white;
+    font-size: 1.2em;
+}
+
+.column_2 {
+    display: grid;
+    grid-template-rows: 3fr;
+    grid-row-gap: 20px;
+}
+
+
+
+
+</style>
+
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li>Home</li>
+            <li>Courses</li>
+            <li>Services</li>
+            <li>Game Dev</li>
+        </ul>
+    </div>
+
+    <section>
+        <div class="grid">
+            <div class="column_1">
+                <h1 class="taglie">Create Beautiful CSS</h1>
+                <p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
+                <div class="btn">Learn More</div>
+                <div class="column_2">
+                    <div class="cell">
+                        <h3>Modern Web Layouts</h3>
+                        <p>Look good on any device.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="gallery">
+        <div class="imageslot">
+            <img src="./assets/images/cloud.svg" alt="Cloud">
+            <p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
+
+
+            <section class="gallery">
+                <div class="imageslot">
+                    <img src="./assets/images/science.svg" alt="Science">
+                    <p>Etiam massa fusce lacus cursus aliquet leo donec inceptos.</p>
+                </div>
+
+                <section class="gallery">
+                    <div class="imageslot">
+                        <img src="./assets/images/network.svg" alt="Network">
+                        <p>Ultricies fermentum pulvinar ridiculus, justo quis est. </p>
+                    </div>
+
+                    <section class="gallery">
+                        <div class="imageslot">
+                            <img src="./assets/images/database.svg" alt="Database">
+                            <p>Nam montes tellus; montes non cubilia donec. </p>
+                        </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>Copyright 2020</p>
+    </footer>
+
+</body>
+
+</html>
