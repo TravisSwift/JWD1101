@@ -9,7 +9,7 @@
 <style>
 
     :root {
-        background-color: #eeee;
+        background-color: #eee;
         box-sizing: border-box;
         font-family: Arial, Helvetica, sans-serif;
     }
@@ -32,8 +32,8 @@ padding: 0;
     list-style: none;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 10px;
-    margin: 2em;
-    padding: 2em;
+    margin: .2em;
+    padding: .2em;
     align-items: center;
     box-shadow: .4em .4em 5px rgba(0,0,0,0.4);
 
@@ -51,7 +51,7 @@ padding: 0;
 }
 .grid {
     display: grid;
-    grid-template-columns: 3fr 1ft;
+    grid-template-columns: 3fr 1fr;
     grid-column-gap: 1em;
     margin: 3em 2em;
 }
@@ -59,7 +59,7 @@ padding: 0;
 
 .column_1 {
     background-image: url(assets/images/closeup-photo-of-black-and-blue-keyboard.jpg);
-    color: white;
+    /* color: white; */
     background-size: cover;
     padding: 1em 3em;
     box-shadow: .4em .4em 5px rgba(0,0,0,0.4);
@@ -81,8 +81,106 @@ padding: 0;
     grid-row-gap: 20px;
 }
 
+.cell {
+    background-color: #18447E;
+    padding: 1em .5em;
+    box-shadow: .4em .4em 5px rgba(0,0,0,0.4);
+
+}
+
+.cell h3 {
+    text-align: center;
+    color: white;
+    font-size: 1.7em;
+}
+
+.cell p {
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+}
+
+.btn {
+    background-color: #333333;
+    display: inline-block;
+    font-size: 1.2em;
+    color: white;
+    padding: .8em;
+    margin-top: 2em;
+}
 
 
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 1em;
+    margin: 2em 2em;
+}
+
+.imageslot {
+    max-width: 15vw;
+    background-color: #5e6672;
+    color: white;
+    padding: 2em;
+    box-shadow: .4em .4em 5px rgba(0,0,0,0.4);
+}
+
+
+img {
+    display: block;
+    max-width: 50%;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    background-color: #18437E;
+    margin: 0;
+    padding: 2em;
+    color: white;
+    text-align: center;
+    font-size: .8em;
+}
+
+@media(max-width:700px) {
+    .navbar ul {
+        display: grid;
+        text-decoration: none;
+        list-style: none;
+        grid-template-columns: 1fr;
+        grid-column-gap: 10px;
+        margin: .2em; 
+        padding: .2em;
+        align-items: center;    
+        box-shadow: .4em .4em 5px rgba(0,0,0,0.4);
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 1em;
+        margin: 3em 2em;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 1em;
+        margin: 2em 2em;
+    }
+
+    .imageslot {
+        max-width: 90vh;
+        background-color: #5e6672;
+        color:white;
+        padding: 2em;
+        box-shadow: .4em .4em 5px rgba(0,0,0,0.4);
+    }
+
+
+    
+}
 
 </style>
 
@@ -98,20 +196,27 @@ padding: 0;
         </ul>
     </div>
 
-    <section>
+    <section class="calltoaction">
         <div class="grid">
             <div class="column_1">
-                <h1 class="taglie">Create Beautiful CSS</h1>
+                <h1 class="tagline">Create Beautiful CSS</h1>
                 <p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
                 <div class="btn">Learn More</div>
+            </div>
+
                 <div class="column_2">
                     <div class="cell">
                         <h3>Modern Web Layouts</h3>
+                        <p>Using CSS3</p>
+                    </div>
+
+                    <div class="cell">
+                        <h3>Responsive Design</h3>
                         <p>Look good on any device.</p>
                     </div>
 
                 </div>
-            </div>
+        
 
         </div>
 
@@ -121,26 +226,27 @@ padding: 0;
         <div class="imageslot">
             <img src="./assets/images/cloud.svg" alt="Cloud">
             <p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
+        </div>
 
 
-            <section class="gallery">
+          
                 <div class="imageslot">
                     <img src="./assets/images/science.svg" alt="Science">
                     <p>Etiam massa fusce lacus cursus aliquet leo donec inceptos.</p>
                 </div>
 
-                <section class="gallery">
+                
                     <div class="imageslot">
                         <img src="./assets/images/network.svg" alt="Network">
                         <p>Ultricies fermentum pulvinar ridiculus, justo quis est. </p>
                     </div>
 
-                    <section class="gallery">
+                    
                         <div class="imageslot">
                             <img src="./assets/images/database.svg" alt="Database">
                             <p>Nam montes tellus; montes non cubilia donec. </p>
                         </div>
-        </div>
+        
 
     </section>
 
