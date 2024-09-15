@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resources/bootstrap-5.1.0-dist/css/bootstrap.css">
+
+    <style>
+      /* In our Flexbox example, we need to handle the layout on smaller screen sizes */
+      @media all and (max-width: 800px)
+      {
+        .custom-media-query{
+        flex-wrap:wrap !important
+      }
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <h1> 3_2 Sizing And Spacing</h1>
+    
+    <!-- TASK 1 Bootstrap Grid Example, using margin to control gap. -->
+    <div id="task1" class="container my-2">
+      <p class="fst-italic">Using Margin to evenly space a gap</p>
+      <div class="row text-light mx-auto">
+        <div class="col-sm-12 “col-md-2 be=bg-primary mx-auto my-1 p-sm-2">Anim cupidatat minim et officia.</div>
+        <div>Cupidatat ullamco occaecat duis minim. Exercitation id enim nisi dolor veniam et. Cupidatat anim Lorem eu sunt in nisi velit laboris ipsum mollit culpa laboris occaecat. Ullamco amet elit consectetur fugiat elit ut velit duis ut anim. Sit id magna duis ad sunt cillum esse duis laborum. Pariatur incididunt anim Lorem mollit aute enim mollit elit quis tempor est.</div>
+        <div class="col-sm-12 “col-md-2 be=bg-primary mx-auto my-1 p-sm-2">Adipisicing dolor et Lorem ut enim laboris quis duis.</div>
+        <div class="col-sm-12 “col-md-2 be=bg-primary mx-auto my-1 p-sm-2">Magna est laborum exercitation ea velit et exercitation culpa ex esse proident elit enim fugiat.</div>
+      </div>
+    </div>
+
+      <!-- TASK 2 Bootstrap Grid Example, using flexbox to control gap. -->
+      <div  id="task2" class="container my-2">
+        <p class="fst-italic">Using Flexbox Justify Content Around to evenly space a gap</p>
+        <div class="row text-light mx-auto justify-content-around">
+          <div class="col-md-2 bg-success p-sm-2">Anim cupidatat minim et officia.</div>
+          <div class="col-md-2 bg-success p-sm-2">Cupidatat ullamco occaecat duis minim. Exercitation id enim nisi dolor veniam et. Cupidatat anim Lorem eu sunt in nisi velit laboris ipsum mollit culpa laboris occaecat. Ullamco amet elit consectetur fugiat elit ut velit duis ut anim. Sit id magna duis ad sunt cillum esse duis laborum. Pariatur incididunt anim Lorem mollit aute enim mollit elit quis tempor est.</div>
+          <div class="col-md-2 bg-success p-sm-2">Adipisicing dolor et Lorem ut enim laboris quis duis.</div>
+          <div class="col-md-2 bg-success p-sm-2">Magna est laborum exercitation ea velit et exercitation culpa ex esse proident elit enim fugiat.</div>
+        </div>
+      </div>
+
+    <!-- TASK 3 List Items Vertical Padding  Examples -->
+    <div id="task3" class="container my-4">
+      <p class="fst-italic">Using Margin to control list layout</p>
+
+      <div class="row">
+        <ul class="col-md-6 list-group">
+          <li class="list-group-item my-2 bg-secondary text-light">Lorem cillum et incididunt quis dolore Lorem ullamco.</li>
+          <li class="list-group-item my-2 bg-secondary text-light">Aliqua excepteur non commodo aliqua.</li>
+          <li class="list-group-item my-2 bg-secondary text-light">Nisi incididunt tempor anim adipisicing minim anim exercitation exercitation.</li>
+        </ul>
+        <ul class="col-md-6 list-group">
+          <li class="list-group-item my-2 bg-secondary text-light">Lorem cillum et incididunt quis dolore Lorem ullamco.</li>
+          <li class="list-group-item my-2 bg-secondary text-light">Aliqua excepteur non commodo aliqua.</li>
+          <li class="list-group-item my-2 bg-secondary text-light">Nisi incididunt tempor anim adipisicing minim anim exercitation exercitation.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- TASK 4 Simple Padding Examples -->
+    <div id="task4" class="container">
+      <p class="fst-italic">Basic Padding </p>
+    </div>
+
+      <div id="task4-a" class="container my-2 bg-primary text-light">
+        <p class="p-sm-2 p-md-4">Qui nostrud amet aute magna esse enim aliqua in labore sit. Cillum commodo do quis ut nulla sunt laboris culpa nostrud non deserunt aliqua. Laborum exercitation officia sint sunt officia ut enim deserunt proident ut. Esse do est ullamco minim eiusmod ea do in Lorem anim culpa. Ea id voluptate dolor sint. Anim aute cillum nostrud nisi et eiusmod. Eu aliquip occaecat non velit irure veniam ullamco pariatur magna laborum sit proident id elit.</p>
+      </div>
+
+      <div id="task4-b" class="container my-2 bg-success text-light"">
+        <p >Qui nostrud amet aute magna esse enim aliqua in labore sit. Cillum commodo do quis ut nulla sunt laboris culpa nostrud non deserunt aliqua. Laborum exercitation officia sint sunt officia ut enim deserunt proident ut. Esse do est ullamco minim eiusmod ea do in Lorem anim culpa. Ea id voluptate dolor sint. Anim aute cillum nostrud nisi et eiusmod. Eu aliquip occaecat non velit irure veniam ullamco pariatur magna laborum sit proident id elit.</p>
+      </div>
+
+      <!-- TASK 5 CSS Grid 2 Column -->
+      <div id="task5" class="container my-2">
+        <p class="fst-italic">2 Column BS Grid with Padding </p>
+
+        <div id="task5-b" class="row">
+          <p class="col-md-5 mx-auto p-sm-3 p-md-5 bg-warning">Qui nostrud amet aute magna esse enim aliqua in labore sit. Cillum commodo do quis ut nulla sunt laboris culpa nostrud non deserunt aliqua. Laborum exercitation officia sint sunt officia ut enim deserunt proident ut. Esse do est ullamco minim eiusmod ea do in Lorem anim culpa. Ea id voluptate dolor sint. Anim aute cillum nostrud nisi et eiusmod. Eu aliquip occaecat non velit irure veniam ullamco pariatur magna laborum sit proident id elit.</p>
+          <p class="col-md-5 mx-auto p-sm-3 p-md-5 bg-info">Qui nostrud amet aute magna esse enim aliqua in labore sit. Cillum commodo do quis ut nulla sunt laboris culpa nostrud non deserunt aliqua. Laborum exercitation officia sint sunt officia ut enim deserunt proident ut. Esse do est ullamco minim eiusmod ea do in Lorem anim culpa. Ea id voluptate dolor sint. Anim aute cillum nostrud nisi et eiusmod. Eu aliquip occaecat non velit irure veniam ullamco pariatur magna laborum sit proident id elit.</p>
+        </div>
+      </div>
+
+      <!-- TASK 6 Flexbox Example, no BS Grid -->
+      <!-- To resolve issue with the way bootstrap handles the flexbox on small scren sizes
+      we must add a custom media query to control the flexbox wrap. -->
+      <div  class="container">
+        <p class="fst-italic">Using Flexbox with Padding. </p>
+      </div>
+      <div id="task6" class="container my-5 d-flex flex-nowrap">
+          <p class="bg-dark mx-3 text-light p-1">Qui nostrud amet aute magna esse enim aliqua in labore sit. Cillum commodo do quis ut nulla sunt laboris culpa nostrud non deserunt aliqua. Laborum exercitation officia sint sunt officia ut enim deserunt proident ut. Esse do est ullamco minim eiusmod ea do in Lorem anim culpa. Ea id voluptate dolor sint. Anim aute cillum nostrud nisi et eiusmod. Eu aliquip occaecat non velit irure veniam ullamco pariatur magna laborum sit proident id elit.</p>
+          <p class="bg-dark mx-3 text-light p-2">Qui nostrud amet aute magna esse enim aliqua in labore sit. Cillum commodo do quis ut nulla sunt laboris culpa nostrud non deserunt aliqua. Laborum exercitation officia sint sunt officia ut enim deserunt proident ut. Esse do est ullamco minim eiusmod ea do in Lorem anim culpa. Ea id voluptate dolor sint. Anim aute cillum nostrud nisi et eiusmod. Eu aliquip occaecat non velit irure veniam ullamco pariatur magna laborum sit proident id elit.</p>
+          <p class="bg-dark mx-3 text-light p-3 ">Qui nostrud amet aute magna esse enim aliqua in labore sit. Cillum commodo do quis ut nulla sunt laboris culpa nostrud non deserunt aliqua. Laborum exercitation officia sint sunt officia ut enim deserunt proident ut. Esse do est ullamco minim eiusmod ea do in Lorem anim culpa. Ea id voluptate dolor sint. Anim aute cillum nostrud nisi et eiusmod. Eu aliquip occaecat non velit irure veniam ullamco pariatur magna laborum sit proident id elit.</p>
+       </div>
+  
+
+  </body>
+</html>
