@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- The Bootstrap CSS Stylesheet -->
+    <link rel="stylesheet" href="./resources/bootstrap-5.1.0-dist/css/bootstrap.css">
+
+  </head>
+
+  <body>
+    
+<!-- 
+**************************** HTML CODING INSTRUCTIONS *************************************** 
+Within the Html below, you will be making changes to the class attributes identified 
+with the following format: class="[Add some instructions...]". 
+These class attributes are meant for you to add out-of-the-box Bootstrap classes.
+IMPORTANT: As you assign the necessary classes, make sure to not include the "[]" that are 
+currently around the instructions. Once you add the classes, you must remove the "[]" 
+in order for the page to display correctly.
+
+To get you started note the class attributes and the correct code for the first 2 attributes 
+you need to change. 
+
+Ex 1: class="[Add Bootstrap container with a border of 3, vertical margin of 3 and padding of 3]"
+Change to ... class="container border border-3 my-3 p-3"
+
+Ex 2: class="[Add Bootstrap font style italic and margin-bottom of 3]"
+Change to ... class="fst-italic mb-3"
+
+*********************************************************************************************
+-->
+
+    <div class="container border border-3 my-3 p-3">
+      <h2>Reality Show Application for</h2>
+      <h2 class="fst-italic mb-3">"I Could Do That Job..."</h2>
+      <form method="GET" action="./Assignment_3_4_Submitted.html">
+        <div class="alert alert-warning border-1 mb-2">
+          <h5>Choose the jobs you feel you could do</h5>
+          <div class="form-check-inline mt-2 ">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Pro-sports Coach</label>
+          </div>
+  
+          <div class="form-check-inline mt-2">
+            <input type="checkbox" class="form-check-input" id="exampleCheck2">
+            <label class="form-check-label" for="exampleCheck2">Pro-athlete</label>
+          </div>
+  
+          <div class="form-check-inline mt-2">
+            <input type="checkbox" class="form-check-input" id="exampleCheck3">
+            <label class="form-check-label" for="exampleCheck3">Grade School Teacher</label>
+          </div>
+  
+          <div class="form-check-inline mt-2">
+            <input type="checkbox" class="form-check-input" id="exampleCheck4">
+            <label class="form-check-label" for="exampleCheck4">Social Media Influencer</label>
+          </div>
+  
+          <div class="form-check-inline mt-2">
+            <input type="checkbox" class="form-check-input" id="exampleCheck5">
+            <label class="form-check-label" for="exampleCheck5">Chef at a 5-star Restaurant</label>
+          </div>
+        </div>
+        <div class="my-3">
+
+          <!-- input-group  -->
+          <label for="fname1" class="form-label">First Name</label>
+          <input type="text" class="form-control" id="fname1" placeholder="Jill">
+        </div>
+  
+        <div class="my-3">
+          <label for="lname1" class="form-label">Last Name</label>
+          <input type="text" class="form-control" id="lname1" placeholder="Jones">
+        </div>
+  
+        <div class="my-3">
+          <!-- input-group  -->
+          <label for="emailExample2" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="emailExample2" placeholder="name@example.com">
+        </div>
+  
+        <div class="my-3">
+          <!-- input-group  -->
+          <label for="emailExample2" class="form-label">Current Job</label>
+          <input type="text" class="form-control" id="emailExample2" placeholder="current job">
+        </div>
+
+        <div class="form-switch">
+          <input type="checkbox" class="form-check-input" id="check2">
+          <label for="check2" class="form-check-label p-1">Over 18?</label>          
+        </div>
+
+        <div class="my-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Tell us why you feel you could do the jobs you chose. Be
+            sure to include relevant experience and video links if available.</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Tell us why."></textarea>
+        </div>
+  
+        <div class="my-3">
+          <button class="btn btn-primary">Apply</button>
+        </div>
+      </form>
+    </div>   
+  
+  </body>
+</html>
