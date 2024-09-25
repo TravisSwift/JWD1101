@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <!-- Boilerplate code sets width of viewport to width of the device 
+    and sets initial zoom to 100%. Allows use of 
+    viewport width (vw) and viewport height (vh). -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- The Bootstrap CSS Stylesheet -->
+  <link rel="stylesheet" href="./resources/bootstrap-5.1.0-dist/css/bootstrap.css">
+  <!-- Popper JS -->
+  <script src="./resources/popper.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="./resources/bootstrap-5.1.0-dist/js/bootstrap.js"></script>
+
+  <title>Bootstrap Carousel Assignment</title>
+  <style>   
+    
+    /* CSS Standard HTML Element Styles */
+    p {
+      margin-bottom: 0;
+      padding-bottom: 0.8em;
+    }
+
+    footer {
+      color: 
+      rgb(194, 194, 194); 
+    }
+
+    /* Custom carousel class */
+    .custom-carousel-overlay {
+        position: absolute;
+        top: 15%;
+        z-index: 25;
+        background-color: rgba(1, 1, 44, .6);
+        color: white; 
+        width: 50%;
+        padding: .8em 1em 1em 1em;
+        margin-left: 1em;          
+      }
+
+      .custom-carousel-overlay a {
+        text-decoration: none;
+        color: inherit;
+      }
+      
+      .custom-carousel-overlay a:hover {
+        text-decoration: none;
+        color: #ffc107;
+      }
+
+    /* Start Media queries */
+    @media screen and (min-width: 997px) and (max-width: 1600px)
+    {        
+        .custom-carousel-overlay p{
+          font-size: 1em;
+        }
+    }
+
+    /* Start Media queries */
+    @media screen and (min-width: 765px) and (max-width: 996px)
+    {
+        .custom-carousel-overlay {
+          width: 75% !important;
+        }
+
+        .custom-carousel-overlay p{
+          font-size: .7em;          
+        }
+    }
+
+    /* Applies to screens 764 or less. */
+    @media screen and (max-width: 764px)
+    {
+      /* Custom carousel class */      
+      .custom-carousel-overlay {
+        background-color: none;
+        position: absolute;
+        top: auto;
+        bottom: 0;
+        z-index: 25;
+        background-color: rgba(1, 1, 44, .3);        
+        padding-top: auto;
+        padding-right: auto;
+        padding-bottom: 2.7em;
+        padding-left: auto;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: 100%;
+        height: 5%;
+      }
+
+      .custom-carousel-overlay p,
+      .custom-carousel-overlay a[class*="btn"],
+      .carousel-indicators
+      {
+            display: none;            
+      } 
+
+    }
+
+    @media screen and (max-width: 450px)
+    {
+        .navbar-brand span {
+          font-size: .7em
+        }
+
+        .custom-carousel-overlay h2{
+          font-size: .9em;
+        }
+
+    }
+
+    /* End Media queries */
+
+    /* Custom extender Bootstrap classes */
+    .container-green-100, .container-blue-100, 
+    .container-gray-100, .container-lightgray-100 {
+      width: 100%;
+    }
+
+    .container-green-100 {
+      background-color: rgb(1, 107, 1);
+      min-height: 7px;
+    }
+
+    .container-blue-100 {
+      background-color: rgb(1, 1, 44);
+    }
+
+    .container-gray-100 {
+      background-color: rgb(136, 136, 136);
+    }
+
+    .container-lightgray-100 {
+      background-color: rgb(221, 221, 221);
+    }
+
+    .container-extralightgray-100 {
+      background-color: rgb(243, 243, 243);
+    }
+
+    /* Start: Bootstrap overrides */
+
+    .navbar-brand {
+      height: 45px !important;
+    }
+
+    .navbar {
+      height: 70px !important;
+      background-color: rgb(1, 1, 44) !important;
+      color: white;
+    }
+
+    .nav-item {
+      background-color: rgb(1, 1, 44) !important;
+      padding-left: 15px;
+    }
+
+    #navbarNav {
+      z-index: 50;
+    }      
+    
+    /* End: Bootstrap overrides */
+
+    /* Custom nav class */
+    .header-buttons {
+      position:absolute; 
+      right:2%;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<!-- 
+**************************** HTML CODING INSTRUCTIONS *************************************** 
+Within the Html below, you will be making changes to the class attributes identified 
+with the following format: class="[Add some instructions...]". 
+These class attributes are meant for you to add out-of-the-box Bootstrap classes or 
+custom CSS classes from the inner page style sheet section above. 
+IMPORTANT: As you assign the necessary classes, make sure to not include the "[]" that are 
+currently around the instructions. Once you add the classes, you must remove the "[]" 
+in order for the page to display correctly.
+
+To get you started note the class attributes and the correct code for the first 2 attributes 
+you need to change. 
+
+Ex 1: class="[Add custom Bootstrap extender class for container-blue-100]"
+Change to ... class="container-blue-100"
+
+Ex 2: class="[Add carousel slide carousel fade carousel light width 100 margin x auto]"
+Change to ... class="carousel slide carousel-fade carousel-light w-100 mx-auto"
+
+*********************************************************************************************
+-->
+
+<div class="container-blue-100">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <div class="navbar-brand"><img class="navbar-brand"
+           src='./assets/images/InsurePeaklogo.png'>
+        <span class="text-white fw-bold font-size-2">InsurePeak</span></div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item" >
+              <a class="nav-link" href="#">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>            
+          </ul>
+        </div>
+        <div class="collapse navbar-collapse header-buttons">
+          <a class="nav-link btn btn-warning me-2 text-black" href="#">GET QUOTE</a>
+          <a class="nav-link btn btn-light text-black" href="#">SIGN-IN</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+  
+<div class="container-gray-100">
+  <!-- Carousel container Starts -->
+  <div class="container">
+    
+    <div id="target" class="carousel slide carousel-fade carousel-light w-100 mx-auto" data-bs-ride="carousel">
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#target" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#target" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#target" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="custom-carousel-overlay">
+            <h2 class="mb-3"><a href="https://www.ancoraeducation.com" target="_blank">Financial Planning.</a></h2>
+            <p>Repellendus quam illo atque odit dignissimos maiores quia rerum saepe suscipit exercitationem maxime dolore, itaque ipsa fugiat necessitatibus fugit quas modi? Similique, voluptatem nihil. 
+              Porro consequuntur exercitationem earum accusantium ea quibusdam deleniti ipsa quae.
+              </p>
+            <a href="https://www.ancoraeducation.com" target="_blank" class="btn btn-warning mt-2 text-white">LEARN MORE</a>
+          </div>
+          <a href="https://www.ancoraeducation.com" target="_blank"><img
+              src="./assets/images/adeolu-eletu-unRkg2jH1j0-unsplash.jpg" class="d-block w-100"></a>
+        </div>
+        <div class="carousel-item">
+          <div class="custom-carousel-overlay">
+            <h2 class="mb-3"><a href="https://www.ancoraeducation.com" target="_blank">A+ Medical Coverage.</a></h2>
+            <p>Distinctio, sed perspiciatis. Cum quos hic sed mollitia ad distinctio nesciunt laborum modi esse tenetur. Quis ullam nostrum ab, rem eius nisi reprehenderit aspernatur non, facere veniam 
+              provident ducimus dolorum quo doloremque at similique enim debitis fugit? Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+            <a href="https://www.ancoraeducation.com" target="_blank" class="btn btn-warning mt-2 text-white"">LEARN MORE</a>
+          </div>
+          <a href="https://www.ancoraeducation.com" target="_blank"><img
+              src="./assets/images/national-cancer-institute-L8tWZT4CcVQ-unsplash.jpg" class="d-block w-100"></a>
+        </div>
+        <div class="carousel-item">
+          <div class="custom-carousel-overlay">
+            <h2 class="mb-3"><a href="https://www.ancoraeducation.com" target="_blank">Life's Rewards.</a></h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio assumenda rerum omnis
+              perspiciatis, voluptatum illo voluptatem optio. Natus, voluptatum odio! Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Numquam eligendi quas molestias quod ea maxime recusandae maiores! Distinctio, sed perspiciatis.</p>
+            <a href="https://www.ancoraeducation.com" target="_blank" class="btn button-warning mt-2 text-white">LEARN MORE</a>
+          </div>
+          <a href="https://www.ancoraeducation.com" target="_blank"><img
+              src="./assets/images/juliane-liebermann-O-RKu3Aqnsw-unsplash.jpg" class="d-block w-100"></a>
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev d-inline-block-xs d-inline-block-sm d-md-none display d-large-none d-xl-none" href="#target" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-dark p-1" aria-hidden="true"></span>
+      </a> 
+      <a class="[Add Bootstrap classes for carousel-control-next" href="#target" data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-dark p-1" aria-hidden="true"></span>
+      </a>
+
+    </div>
+    
+  </div>
+  <!-- Carousel container End -->
+</div>
+
+<div class="container-lightgray-100">
+  <div class="container">
+    <div class="row">      
+      <div class="col-lg-4 col-md-12 col-sm-12 mt-3"><a href="https://www.ancoraeducation.com" target="_blank"><img
+        src="./assets/images/sarah-brown-3eg3Iuq-3gQ-unsplash.jpg" class="d-block w-100"></a>
+        <div class="mt-2"><h4 mt-2>Auto coverage</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit...</p></div>
+      </div>
+      <div class="col-lg-4 col-md-12 col-sm-12 mt-3"><a href="https://www.ancoraeducation.com" target="_blank"><img
+        src="./assets/images/robert-collins-tvc5imO5pXk-unsplash.jpg" class="d-block w-100"></a>
+        <div class="mt-2"><h4 mt-2>Securing futures</h4>
+        <p>Eligendi sit quod, fugiat repudiandae maxime ab distinctio...</p></div>
+      </div>
+      <div class="col-lg-4 col-md-12 col-sm-12 mt-3"><a href="https://www.ancoraeducation.com" target="_blank"><img
+        src="./assets/images/beau-runsten-mR-N67XjTHg-unsplash.jpg" class="d-block w-100"></a>
+        <div class="mt-2"><h4 mt-2>A fit life</h4>
+        <p>Quos aperiam deserunt sit ad obcaecati praesentium...</p></div>
+      </div>      
+    </div>
+  </div>
+</div>
+<div class="container-extralightgray-100">
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12">
+        <h2 class="fw-bold p-3">"You got the why. We'll take the how."</h2>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12">      
+      <form method="GET" action="">
+        <div class="my-3">          
+          <label for="Zip" class="form-label fw-bold">Enter your 5 digit Zip:</label>
+          <input type="text" class="form-control w-50" id="Zip" placeholder="00000">
+        </div>
+        <div class="my-3">
+          <button type="submit" class="btn btn-warning">GET A QUOTE</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+<div class="container-green-100">  
+</div>
+<div class="container-blue-100">
+  <footer class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center pt-2">
+        <p>          
+          © InsurePeak, Inc. All Rights Reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+
+</html>
