@@ -29,7 +29,7 @@ console.log(expensiveCar);
 
  let isLessExpense = basicCar.price < expensiveCar.price;
 let isNewer = expensiveCar.year > basicCar.year;
-let priceDifference = expensiveCar - basicCar.price;
+let priceDifference = expensiveCar.price - basicCar.price;
 let yearDifference = expensiveCar.year - basicCar.year;
 
 console.log(`Is the basic car less expensive than the expensive car?${isLessExpense}`);
