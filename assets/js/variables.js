@@ -8,8 +8,6 @@ console.log(firstNumber + secondNumber);
 firstNumber = 50;
 console.log(firstNumber * secondNumber);
 
-
-
 let secondString = "This is text";
 console.log(firstString + secondString);
 
@@ -35,7 +33,6 @@ toThat = 10;
 console.log(compareThis == toThat);
 
 toThat = "10";
-
 console.log(compareThis === toThat);
 
 compareThis = 200;
