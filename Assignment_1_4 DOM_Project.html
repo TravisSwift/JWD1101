@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> DOM Assignment 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        h1 {
+            text-align: center;
+        }
+
+        h2{
+            background-color: khaki;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .default-p{
+            border: 4px solid black;
+            min-height: 100px;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .default-div{
+            background-color: #aaa;
+            margin: auto;
+            min-height: 100px;
+        }
+
+        .default-ul {
+            list-style: none;
+            font-size: 2em;
+        }
+
+        .default-ul li
+        {
+            border: 2px solid black;
+            padding: 25px;
+            margin: 10px;
+        }
+
+
+        .default-ul li:nth-child(even){
+            background-color: rgb(65, 160, 65);
+            color:white;
+        }
+
+        .green-text{
+            color:rgb(35, 121, 35);
+            font-weight: bold;
+            
+        }
+        .royal-blue
+        {
+            background-color: royalblue;
+            color: white
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    <h1>Assigment 1_4 DOM Updates</h1>
+    <h2 id="task1-heading">Task 1 - Copy the text from the first paragraph element to the second paragraph element. </h2>
+    <p id=task1_src class="default-p"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi temporibus
+        expedita harum, laboriosam inventore quaerat nemo iste ducimus molestias fugiat at, quam suscipit impedit
+        tempore! Delectus nemo quos dolorem, dolorum numquam excepturi? Sapiente nemo dolorum veritatis excepturi
+        maiores? Officiis quod eum, magni, similique ad, tempora cumque nemo quibusdam perferendis deleniti aut
+        explicabo illo sapiente. Veritatis tempore earum vel excepturi delectus adipisci minima eveniet, distinctio
+        quidem inventore obcaecati. Sint iure fugit quasi, magni aliquid in earum iste quaerat est impedit cupiditate,
+        mollitia odio consequuntur ut exercitationem provident, aspernatur et laudantium? Quo ipsum iste deleniti sunt
+        illo quos, soluta similique laboriosam consequatur. </p>
+    <p id="task1_dest" class="default-p"></p>
+
+    <h2 id="task2-heading">Task 2 - Style the DIV using JavaScript</h2>
+    <div id="task2" class="default-div"> </div>
+
+    <h2 id="task3-heading">Task 3 Style THe List Items Using JavaScript</h2>
+    <ul class="default-ul">
+        <li> List Item 1</li>
+        <li>List Item 2</li>
+        <li id="task3-list-item-3"> List Item 3</li>
+        <li> List Item 4</li>
+    </ul>
+
+
+<script src="./assets/js/project1.js"></script>
+</body>
+
+</html>
