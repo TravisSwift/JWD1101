@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            background-color: royalblue;
+            padding: 10px;
+            color: white;
+        }
+
+        .directions {
+            text-align: center;
+            font-style: italic;
+            font-size: 1.3em;
+        }
+
+        .flex-row {
+            display: flex;
+            flex-direction: row;
+            max-width: 95%;
+
+        }
+
+        .flex-center {
+            justify-content: center;
+        }
+
+        .question-box {
+            box-sizing: border-box;
+            background-color: khaki;
+            padding: 20px;
+            margin: 20px;
+            border: 4px solid black;
+            font-size: 1.2em;
+            min-width: 75%;
+
+        }
+
+        .answer-box {
+            box-sizing: border-box;
+            background-color: rgb(65, 155, 65);
+            color: white;
+            padding: 20px;
+            font-size: 1.5em;
+            text-align: center;
+            border: 4px solid black;
+            min-width: 25%;
+        }
+
+        .break-word {
+            word-wrap: break-word;
+        }
+
+        .problem-7 {
+            text-align: center;
+            padding: 15px;
+            border: 4px solid rgb(106, 11, 161);
+            margin: 20px;
+            font-size: 1.5em;
+            /* background-color: rgb(204, 31, 204);
+            color: white; */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JS Array & Loops Assignment</h1>
+    <p class="directions">Using only JavaScript, solve the problems below. All solutions will involve using arrays,
+        loops, string methods, and DOM.</p>
+
+    <h2>Task 1. Create a array containing the numbers 9, 12, 16, 22, and 30. Output the array to the answer box.</h2>
+    <div class="flex-row flex-center">
+        <p id="answer1" class="answer-box"></p>
+    </div>
+
+
+    <h2>Task 2. Get each word from the problem box, and store them in an array. You can not "hard-code" the values in
+        the array. Add
+        the word "JavaScript" to the end of array.
+        Output the array to the answer-box.</h2>
+
+    <div class="flex-row">
+        <p id="problem2" class="question-box">HTML CSS and</p>
+        <p id="answer2" class="answer-box"></p>
+    </div>
+
+    <h2>Task 3. Add the values at index zero and 1 from problem 1, and output the results to the answer box. </h2>
+
+    <div class="flex-row flex-center">
+        <p id="answer3" class="answer-box"></p>
+    </div>
+
+    <h2>Task 4. Create an array with the values 17, 68, 49, 128, and 236. Sum all the values in the array using a loop.
+    </h2>
+
+    <div class="flex-row flex-center">
+        <p id="answer4" class="answer-box"></p>
+    </div>
+
+    <h2>Task 5. Create an array with the values "Lions", "Tigers" "Bears". Output the values of the array to the answer
+        boxes below.
+        Place one value in each box. </h2>
+
+    <div class="flex-row flex-center">
+        <p id="answer5-element1" class="answer-box"></p>
+        <p id="answer5-element2" class="answer-box"></p>
+        <p id="answer5-element3" class="answer-box"></p>
+    </div>
+
+
+    <h2>Task 6. Output the word count of the ipsum lorem by using an array.</h2>
+    <div class="flex-row">
+        <p id="problem6" class="question-box"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse enim
+            fugiat ipsa natus ipsum quibusdam
+            dolor possimus laboriosam maxime cupiditate quos dolorum quia voluptates similique animi pariatur vitae rem,
+            voluptatibus blanditiis voluptatum, alias maiores ea exercitationem illum! Ipsam eos et adipisci ratione non
+            cum fugiat? Temporibus commodi eos vitae? Veritatis rerum pariatur velit illo? Nam magni amet adipisci aut
+            odio. Perferendis voluptatibus at perspiciatis.</p>
+
+        <p id="answer6" class="answer-box"></p>
+
+    </div>
+
+    <h2>Task 7. Place the 4 HTML elements shown below into an array, then using a loop, change their background color to
+        'rgb(204, 31, 204)'' and text color to 'white'
+    </h2>
+    <div class="flex-row flex-center">
+        <div class="problem-7"> Element A </div>
+        <div class="problem-7"> Element B </div>
+        <div class="problem-7"> Element C </div>
+        <div class="problem-7"> Element D </div>
+    </div>
+
+    <script src="./assets/js/Assignment 2_2.js"></script>
+
+</body>
+
+</html>
