@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+
+        h1{
+            text-align: center;
+        }
+
+        h2{
+            background-color: royalblue;
+            padding: 10px;
+            color: white;
+        }
+
+        .directions{
+            text-align: center;
+            font-style: italic;
+            font-size: 1.3em;
+        }
+
+        .flex-row {
+            display: flex;
+            flex-direction: row;
+            max-width: 95%;
+
+        }
+
+        .question-box {
+            box-sizing: border-box;
+            background-color: khaki;
+            padding: 20px;
+            margin: 20px;
+            border: 4px solid black;
+            font-size: 1.2em;
+            min-width: 75%;
+
+        }
+
+        .answer-box {
+            box-sizing: border-box;
+            background-color: rgb(65, 155, 65);
+            color: white;
+            padding: 20px;
+            font-size: 1.5em;
+            text-align: center;
+            border: 4px solid black;
+            min-width: 25%;
+        }
+
+        .break-word{
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JS Strings Assignment</h1>
+    <p class="directions">Using only JavaScript, answer the questions below.  Your answers must be placed into the green answer boxes.</p>
+
+    <h2>Task 1. What is the total length (total number of characters )of the ipsum lorem text.</h2>
+    <div class="flex-row">
+        <p id="string1" class="question-box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus minima
+            saepe ullam dolorum officiis. Rerum hic excepturi ut earum delectus a animi in accusamus obcaecati itaque
+            quo quis aliquam maxime doloribus architecto dolorum, facere iusto.</p>
+        <p id="answer1" class="answer-box"> </p>
+    </div>
+    <h2>Task 2. What index position does the characters "Spain" appear at? </h2>
+
+    <div class="flex-row">
+        <p id="string2" class="question-box">The rain in Spain falls mainly on the plain.</p>
+        <p id="answer2" class="answer-box"> </p>
+    </div>
+
+    <h2>Task 3. Change all of the characters to upper case. </h2>
+
+    <div class="flex-row">
+        <p id="string3" class="question-box">He fOuNd tHe End OF the RaInBOw aNd WAs SUrPriSEd aT wHAt HE FOunD tHeRe.</p>
+        <p id="answer3" class="answer-box"> </p>
+    </div>
+
+    <h2>Task 4. True or False - Does The text belox contain the text "hiddenword" ? </h2>
+
+    <div class="flex-row">
+        <p id="string4" class="question-box break-word">
+            asdjfaskljdfasjfasdjhghriouqpvmqexcqiowetucnpqrxmcpqwxasdklfhxqewqopixumweocmasmxkhihercalfkl
+            ahfhawecmasoqcuwecumweropictyqauxcqweructmpwerixuxtqo,xo[ctmpqwmxcou,xsermcopiaeru,xu,wepoctuwerpcmpioc
+            [cmpowemcmsiopucoqweurcopuweropcmpoumcpmpusjgcljcopiwercmqumcqu[pc,p[mvbkbnsdngvalnv;nvopwjoqwjghaklnoqjjas
+            nashiddenwordgherogalgnqweopghcwojg,wwoj,xdopa,dosepdo,weropcmasdfasfasdfkldajskfljasfkljassadfdvecverxdada
+            sxaevsdfscservsdcsdfcsecsecgsdfcsdesrwexwsercsdfcsdcgsdcgsdcgewcgascbxvnnh;fjasl;fieiekefnfjdkwpdfmnsdsopdkns
+            dhfjvnehfndjdjfgkdfurfhuwnfuenfhsjajnfnlakshfoaieialdnfuiejkfunsklasdf
+        </p>
+        <p id="answer4" class="answer-box"> </p>
+    </div>
+
+    <h2>Task 5. Slice the sentence "Down came the rain, and washed the spider out." into the answer box </h2>
+
+    <div class="flex-row">
+        <p id="string5" class="question-box">The itsy bitsy spider went up the water spout.
+            Down came the rain, and washed the spider out.
+            Up came the sun, and dried up all the rain,
+            and the itsy bitsy spider went up the spout again. </p>
+        <p id="answer5" class="answer-box"> </p>
+    </div>
+    <h2>Task 6. Change the word shipwreck to ship. </h2>
+
+    <div class="flex-row">
+        <p id="string6" class="question-box">Nancy was proud that she ran a tight shipwreck.</p>
+        <p id="answer6" class="answer-box"> </p>
+    </div>
+
+    <script src = "./assets/js/Assignment 2_1.js"></script>
+</body>
+
+</html>

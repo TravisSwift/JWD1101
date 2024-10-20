@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flow Control</title>
+
+    <style>
+
+
+        .flex-row{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        .flex-col{
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            padding: 5px;
+            border-right:  1px solid gray;
+            border-left: 1px solid gray;
+        }
+        .review{
+            text-align: center;
+            font-size: 1.3em;
+            background-color: rgb(61, 61, 61);
+            color: rgb(255, 255, 255);
+            padding: 1em;
+            border-radius: 25px;
+        }
+
+        #cube{
+            background-color: gray;
+            width: 200px;
+            height: 200px;
+            margin: 20px auto;
+        }
+
+        #lunch{
+            background-color: skyblue;
+            padding: 5px;
+            margin: 5px;
+            font-size: 1.3em;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Assignment Flow Control</h1>
+
+    <section class="flex-row">
+        <div id="movie-review" class="flex-col">
+            <h2>Movie Reviews</h2>
+        </div>
+        
+  
+        <div class="flex-col">
+            <h2>Color Cube Change</h2>
+            <div id="cube"></div>
+        </div>
+
+        <div class="flex-col">
+            <h2>Lunch Menu</h2>
+            <div id="lunch"></div>
+        </div>
+    </section>
+
+
+    <script src="./assets/js/Assignment 3_2.js"></script>
+</body>
+</html>
