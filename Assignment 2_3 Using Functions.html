@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+
+        h1{
+            text-align: center;
+        }
+
+        .flex-row{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .number{
+            padding: 10px;
+            margin: 5px;
+            background-color: orchid;
+            font-size: 1.5em;
+        }
+        #sum, .results, .spamchecker{
+            padding: 10px;
+            margin: 5px;
+            background-color: rgb(55, 182, 214);
+            font-size: 1.5em;
+        }
+
+        .word-count{
+            padding: 10px;
+            line-height: 1.5em;
+        }
+
+        .emails{
+            border: 4px solid black;
+            border-radius: 20px;
+            padding: 15px;
+            background-color: lightgrey;
+        }
+
+        .spamchecker{
+            background-color: rgb(255, 240, 192);
+        }
+        span{
+            font-weight: bold;
+        }
+
+        #welcome{
+            background-color: lightskyblue;
+            font-size: 3em;
+            min-height: 150px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>JS Functions</h1>
+    <header id="welcome">
+
+    </header>
+
+    <section>
+        <h2>Input Data</h2>
+        <h3>Sum of Numbers</h3>
+        <div class="flex-row">
+            <p class="number">4</p>
+            <p class="number">6</p>
+            <p class="number">2</p>
+            <p class="number">8</p>
+            <p class="number">4</p>
+            <p> = </p>
+            <p id="sum"></p>
+        </div>
+
+
+        <h3>Paragraph for Word Count </h3>
+        <p id="p1" class="word-count"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt error adipisci animi ipsum cum
+            eligendi impedit culpa incidunt! Inventore maiores pariatur qui. Voluptatibus rem corrupti nostrum hic
+            quisquam, exercitationem repudiandae provident soluta magni amet fugiat aspernatur sequi temporibus
+            veritatis alias optio cumque commodi neque voluptatem quibusdam reprehenderit ab. Atque adipisci, id ipsa
+            esse tenetur voluptatibus voluptas! Consequatur iure, rerum eveniet consectetur quasi fugiat quia? Tenetur
+            quam, facilis, provident ducimus et molestias est dolores earum voluptatibus suscipit autem ea?</p>
+        <p id="p2" class="word-count"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero animi suscipit assumenda beatae
+            fugiat ipsam laudantium deleniti laboriosam! Qui quidem soluta ea tempora quibusdam consequuntur quo
+            dignissimos blanditiis odit neque! Aspernatur illum ab doloremque consequatur reiciendis qui perferendis,
+            nihil at praesentium deleniti, voluptatibus inventore, et cupiditate? Molestias, ullam aut?</p>
+        <p id="p3" class="word-count"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus laboriosam deserunt animi,
+            adipisci, eaque laborum sunt possimus dolores facilis neque nulla, harum unde? Inventore incidunt voluptas
+            dolorum laudantium ex, rem ea cum quae, consequuntur aut fugit? Fugiat a expedita eligendi beatae, nulla,
+            possimus excepturi soluta, assumenda maxime ab rem corporis sunt dicta quae sit est impedit dolore dolorem
+            voluptates! A quibusdam, eum nostrum vitae, consequuntur quidem ducimus sed beatae perspiciatis sunt alias
+            minus asperiores repellat! Vel reprehenderit asperiores, pariatur cumque dolorem aperiam voluptate
+            voluptates consequuntur minima vitae dignissimos vero dicta quidem perferendis nisi magnam delectus
+            consectetur? Ipsam nesciunt debitis quo, et repellat autem voluptatem itaque veniam doloremque est hic
+            exercitationem nisi optio omnis quod magni repellendus veritatis. Minus maxime, odio ipsam pariatur
+            repudiandae alias. Vero, cum!</p>
+
+        <h3>Email Inbox Spam Check</h3>
+        <div>
+            <p id="spam1" class="emails"> <span>Subject:</span> Remember to practice coding everyday.</p>
+            <p id="spam2" class="emails"> <span>Subject:</span> &#200 buy ViAgRA now!!! </p>
+            <p id="spam3" class="emails"> <span>Subject:</span> How is your new job going? </p>
+            <p id="spam4" class="emails"> <span>Subject:</span> Call me, Love Mom</p>
+            <p id="spam5" class="emails"> <span>Subject:</span> xxx Real girls waiting to meet you online! xxx</p>
+            <p id="spam6" class="emails"> <span>Subject:</span> Animal Rescue Newletter</p>
+        </div>
+     
+    </section>
+
+
+    <script src="./assets/js/Assignment 2_3.js"></script>
+</body>
+
+</html>
