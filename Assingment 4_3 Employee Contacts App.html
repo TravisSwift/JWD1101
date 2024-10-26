@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS Employer Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+      html, body{
+        margin: 0;
+      }
+
+      h3{
+        margin-block-start: 0;
+        margin-block-end: 0;
+      }
+
+      .input-control{
+        background-color: rgb(70, 70, 70);
+        color: white;
+        font-size: 1.3em;
+        padding: 1.5rem;
+        margin: 0;
+        text-align: center;
+      }
+
+      .input-control input{
+        padding: 1em;
+        min-width: 200px;;
+      }
+      
+      .button{
+        background-color: rgb(164, 223, 164);
+        color: black; 
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px;
+        border: none;
+        font-size: 1em;
+      }
+
+      .flex-container{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+
+      }
+
+      .flex-row{
+        display: flex;
+        flex-direction: row;
+        min-height: 100vh;
+      }
+
+      .flex-col{
+        display: flex;
+        flex-direction: column;
+      }
+
+      .employee-card{
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(70, 70, 70);
+        color: white;
+        min-width: 100%;
+        margin: 15px;
+      }
+
+      .employee-name{
+        text-align: center;
+        font-size: 2.5em;
+        padding: 15px;
+        margin: 0;
+      }
+
+      .employee-title{
+        text-align: center;
+        font-style: italic;
+        font-size: 2em;
+        padding: 15px;
+        margin: 0;
+      }
+
+      .employee-email{
+        color: skyblue;
+        padding: 5px;
+      }
+
+      .employee-phone{
+        padding: 5px;
+      }
+
+      .error{
+        background-color: rgb(136, 39, 53);
+        padding: 1em;
+      }
+
+      .contact-info{
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+
+  </head>
+
+
+  <body>
+    <main id="app" class="flex-row">
+      <section id="inputs" class="input-control flex-col">
+        <label for="firstname">First Name</label>
+        <input type="text" id="firstname">
+  
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lastname">
+  
+        <label for="jobtitle">Job Title</label>
+        <input type="text" id="jobtitle">
+
+        <label for="phone">Email</label>
+        <input type="text" id="email">
+
+        <label for="phone">Phone</label>
+        <input type="text" id="phone">
+
+        <input class="button" type="button" onclick="createEmployee()" value="Create New Employee">
+
+        <div id = "errors">
+
+        </div>
+      </section>
+
+      <section id="cards" class="flex-container"> 
+
+      </section>
+
+    </main>
+
+    <p><div>Icons made by <a href="https://www.flaticon.com/authors/kmg-design" title="kmg design">kmg design</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div></p>
+    <script src="./assets/js/Assignment 4_3.js"></script>
+  </body>
+</html>

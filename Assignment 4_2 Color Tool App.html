@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <style>
+
+    body, html{
+      margin: 0;
+    }
+
+    #controls{
+      background-color: rgb(50, 50, 50);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .color-box{
+    width: 500px;
+    height: 500px;
+    margin: 20px auto;
+    background-color: rgb(100, 100, 100);
+    }
+
+    label{
+      font-size: 1.2em;
+      margin: 10px;
+    }
+    h1{
+      text-align: center;
+    }
+
+    #color-code{
+      margin: 10px auto;
+      text-align: center;
+    }
+
+  </style>
+</head>
+
+<body>
+  <section id="controls">
+    <label for="red-control">Red Control</label>
+    <input id="red-control" type="range" min="0" max="255" default=100 oninput="updateColorValue()">
+    <label for="gren-control">Green Control</label>
+    <input id="green-control" type="range" min="0" max="255" default=100 oninput="updateColorValue()">
+    <label for="blue-control">Blue Control</label>
+    <input id="blue-control" type="range" min=0 max=255 default=100 oninput="updateColorValue()">
+  </section>
+
+  <section>
+    <h1>Color Changer App</h1>
+    <div id="color-box" class="color-box">
+    </div>
+  </section>
+
+  <section>
+    <h2 id="color-code"></h2>
+  </section>
+
+  <script src="./assets/js/Assignment 4_2.js"></script>
+
+</body>
+
+</html>
