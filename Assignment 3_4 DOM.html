@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrabble</title>
+
+    <style>
+
+        header{
+            text-align: center;
+            font-size: 4em;
+            
+        }
+
+        .flexbox{
+            display: flex;
+            flex-direction: row;
+        }
+
+        #letters{
+            flex-basis: 25%;
+            border-right: 8px solid black;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        #playarea{
+            flex-basis: 50%;
+            border-right: 8px solid black;
+
+        }
+
+        #gameboard{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            background-color: rgb(204, 201, 177);
+            min-height: 500px;
+            width: 500px;
+            margin: auto;
+
+        }
+
+        .board-space{
+            border: 2px solid black;
+        }
+
+        .letter{
+            width: 90px;
+            height: 90px;
+            background-color: rgb(163, 160, 136);
+            color: black;
+            font-size: 5em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 2px;
+        }
+
+        .letter p{
+            text-align: center;
+        }
+
+        button{
+            margin: 2vw;
+            min-width: 100px;
+            padding: 10px;
+            background-color: #971d1d;
+            border: none;
+            color: white;
+            font-size: 1.2em;
+            box-shadow: 4px 4px 4px #CCC;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>Scrabble</header>
+    <main class="flexbox">
+        <div id="letters" ondragover="onDragOver(event)" ondrop="drop(event)">
+        </div>
+
+        <div id="playarea">
+            <div id="gameboard">
+                <div class="board-space" ondragover="onDragOver(event)" ondrop="drop(event)"></div>
+                <div class="board-space" ondragover="onDragOver(event)" ondrop="drop(event)"></div>
+                <div class="board-space" ondragover="onDragOver(event)" ondrop="drop(event)"></div>
+                <div class="board-space" ondragover="onDragOver(event)" ondrop="drop(event)"></div>
+                <div class="board-space" ondragover="onDragOver(event)" ondrop="drop(event)"></div>
+
+                <div class="board-space" ondragover="onDragOver(event)" ondrop="drop(event)"></div>
+                <div class="board-space" ondragover="onDragOver(event)" ondrop="drop(event)"></div>
+                <div class="board-space" ondragover="onDragOver(event)" ondrop="drop(event)"></div>
+                <div class="board-space" ondragover="onDragOver(event)" ondrop="drop(event)"></div>
+                <div class="board-space" ondragover="onDragOver(event)" ondrop="drop(event)"></div>
+
+
+                <div class="board-space" ondragover="onDragOver(event)" ondrop="drop(event)"></div>
+                <div class="board-space" ondragover="onDragOver(event)" ondrop="drop(event)"></div>
+                <div class="board-space" ondragover="onDragOver(event)" ondrop="drop(event)"></div>
+                <div class="board-space" ondragover="onDragOver(event)" ondrop="drop(event)"></div>
+                <div class="board-space" ondragover="onDragOver(event)" ondrop="drop(event)"></div>
+
+
+                <div class="board-space" ondragover="onDragOver(event)" ondrop="drop(event)"></div>
+                <div class="board-space" ondragover="onDragOver(event)" ondrop="drop(event)"></div>
+                <div class="board-space" ondragover="onDragOver(event)" ondrop="drop(event)"></div>
+                <div class="board-space" ondragover="onDragOver(event)" ondrop="drop(event)"></div>
+                <div class="board-space" ondragover="onDragOver(event)" ondrop="drop(event)"></div>
+
+                <div class="board-space" ondragover="onDragOver(event)" ondrop="drop(event)"></div>
+                <div class="board-space" ondragover="onDragOver(event)" ondrop="drop(event)"></div>
+                <div class="board-space" ondragover="onDragOver(event)" ondrop="drop(event)"></div>
+                <div class="board-space" ondragover="onDragOver(event)" ondrop="drop(event)"></div>
+                <div class="board-space" ondragover="onDragOver(event)" ondrop="drop(event)"></div>
+            </div>
+        </div>
+
+        <div id="game-options">
+            <button onclick="newGame()"> New Game</button>
+            <button onclick="getLetter()"> Get Letter</button>
+            <button onclick="clearBoard()"> Clear Board</button>
+
+        </div>
+    </main>
+    
+    <script src="./assets/js/Assignment 3_4.js"></script>
+</body>
+</html>
