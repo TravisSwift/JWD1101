@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solution JS Events</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300&family=Lato:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        body,
+        html {
+            margin: 0;
+        }
+
+        nav {
+            margin: 0 5vw;
+            background-color: rgb(81, 100, 184);
+            min-height: 100px;
+            color: white;
+        }
+
+        nav p {
+            margin: 0;
+            padding: 10px;
+            font-size: 2.5em;
+        }
+
+        body {
+            background-color: rgb(105, 171, 224);
+            min-height: 100vh;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            background-color: white;
+            margin: 0 5vw;
+        }
+
+        .flex-col {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            padding: 15px;
+
+        }
+
+        #new-post-container {
+            margin: 0;
+            text-align: right;
+        }
+
+        #new-tweet {
+            width: 100%;
+            margin: 0;
+            line-height: 2em;
+            border-radius: 5px;
+        }
+
+        #new-tweet-button {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 25px;
+            border: none;
+            min-width: 100px;
+            background-color: steelblue;
+            color: white;
+
+        }
+
+        #tweets p {
+            margin: 10px;
+            border-top: 1px solid gray;
+            padding: 10px;
+
+        }
+
+        textarea{
+            font-family: 'Lato', sans-serif;
+            font-size: 1.1em;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <p>JsTwitter</p>
+
+    </nav>
+
+    <div class="flex-container">
+        <div class="flex-col">
+            <div id="new-post-container">
+                <textarea id="new-tweet" oninput="countCharacters(this.value)" rows="2" placeholder="Whats on your mind?"></textarea>
+                <button id="new-tweet-button" onclick="addNewPost()">Tweet</button>
+            </div>
+            <p class="char-label">Characters <span id="char-count"> </span> / 140 remaining</p>
+            <p id="error-msg"></p>
+
+            <div id="tweets">
+                <p>Sample Tweet</p>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./assets/js/Assignment 3_3.js"></script>
+
+</body>
+
+</html>
