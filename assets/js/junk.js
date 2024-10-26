@@ -1,7 +1,3 @@
-var hour = 4;
-while (hour < 6)
-{
- hour++;
- document.write("It is " + hour + " am. It is still dark outside." + "<br>");
-}
-document.write("It is now daylight!");
+var favNum=prompt("Enter your favorite number.");
+var mssg = (favNum < 100) ? "less than 100":"not less than 100";
+document.write("Your favorite number is " + mssg + ".");
