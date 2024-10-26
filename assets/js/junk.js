@@ -1,7 +1,7 @@
-var numMssg = "";
-for (var i = 0; i < 3; i++)
+var hour = 4;
+while (hour < 6)
 {
- numMssg += "The current number is " + i + "." + "<br>";
+ hour++;
+ document.write("It is " + hour + " am. It is still dark outside." + "<br>");
 }
-document.write(numMssg);
-
+document.write("It is now daylight!");
