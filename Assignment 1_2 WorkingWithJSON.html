@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with JSON Assignment</title>
+</head>
+<body>
+    <h1> Working With JSON Assignment</h1>
+    <p>In this assignment, you will write a script that converts valid JSON into a JSON object, then using the JS Object,
+        you'll create an HTML element on the screen.
+    </p>
+    <p>
+        Your JSON will consists of JSON formatted text that maps to CSS properties and values. For example, to generate a 
+        blue HTML element with a width of 100px, the JSON would be {"background-color":"blue", "width":"100px"}
+    </p>
+
+    <div>
+        <textarea name="jsonEditor" id="jsonEditor" cols="30" rows="10"></textarea>
+    </div>
+    <button onclick="createObjectFromJSON(jsonEditor.value)">Create Object From Json</button>
+
+    <script src="./assets/js/Assignment 1_2 WorkingWithJSON.js"></script>
+</body>
+</html>
