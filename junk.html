@@ -1,13 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-<script src="./assets/js/junk.js"></script>
+<html>
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="html, training, lessons, templates">
+  <meta lang="en-US">
+
+  <title>JS Math</title>
+  <style>
+    #target {
+      box-sizing: border-box;
+      min-width: 500px;
+      min-height: 500px;
+      background-color: rgb(200, 200, 200);
+      border: 2px solid black;
+      font-size: 3em;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+
+    #btn1 {
+      width: '75px';
+      margin: auto;
+      float: right;
+      padding: 10px;
+    }
+
+    .flex-row {
+      display: flex;
+      flex-direction: row;
+    }
+
+    #options{
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(60, 60, 60);
+      color: white;
+      padding: 10px;
+      font-size: 1.4em;
+    }
+
+    #options *{
+      margin: 10px;
+    }
+
+    #options input{
+      padding: 5px;
+      min-height: 25px;
+    }
+
+    .about{
+      padding: 20px;
+      justify-self: right;
+      max-width: 200px;
+      background-color: khaki;
+      margin: 0 20px;
+      font-size: 1.1em;
+      line-height: 1.5em;
+
+    }
+
+
+      
+
+    
+  </style>
+
+
+</head>
+
+
+<body>
+  <h1>JS Math</h1>
+
+
+  <div class="flex-row">
+    <div id="options">
+      <label for='inputbox1'>Input 1</label>
+      <input type=number id='inputbox1' name='inputbox1' value="0.1">
+      <label for='inputbox2'>Input 2</label>
+      <input type=number id='inputbox2' name='inputbox2' value="0.2">
+
+      <button type='button' id="btn1" onclick="jsAdd()">Add</button> 
+      <button type='button' id="btn1" onclick="jsSub()">Subtract</button> 
+      <label for="tofixed">Apply toFixed for decimals?</label>
+      <input type="checkbox" id="tofixed">
+     </div>
+
+
+    <div id='target'>
+      <div id='output'>
+
+      </div>
+    </div>
+
+    <div class="about" >
+      JS, like many other programming languages can give "incorrect" results
+      when working with decimal numbers.  This is because it calcuates the 
+      number to a high degree of precision.  Some decimals numbers will 
+      produce strange results due to the level of precision.  To resovle this,
+      in JS we can round the number with <b>.toFixed(n) </b>.
+    </div>
+
+  </div>
+
+
+
+
+  <script>
+
+ 
+
+    function jsAdd() {
+      var input1 = document.getElementById('inputbox1');
+      var input2 = document.getElementById('inputbox2');
+      var toFixed = document.getElementById('tofixed');
+      let results = 0;
+
+      results = Number(input1.value) + Number(input2.value)
+
+      if(toFixed.checked)
+      {
+        results = results.toFixed(2);
+      }
+
+      let output = document.getElementById("output");
+      output.innerText = results;
+
+    }
+
+    function jsSub() {
+      var input1 = document.getElementById('inputbox1');
+      var input2 = document.getElementById('inputbox2');
+      var toFixed = document.getElementById('tofixed');
+      let results = 0;
+
+      results = Number(input1.value) - Number(input2.value)
+
+      if(toFixed.checked)
+      {
+        results = results.toFixed(2);
+      }
+
+      let output = document.getElementById("output");
+      output.innerText = results;
+    }
+  </script>
+
+  <script src="./assets/js/junk.js"></script>
 </body>
+
 </html>

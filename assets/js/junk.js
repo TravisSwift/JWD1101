@@ -1,3 +1,7 @@
-var favNum=prompt("Enter your favorite number.");
-var mssg = (favNum < 100) ? "less than 100":"not less than 100";
-document.write("Your favorite number is " + mssg + ".");
+"use strict";
+
+ Math.random();
+ console.log(Math.random());
+
+ Math.floor(Math.random() * 100);
+ console.log(Math.floor(Math.random() * 100));
