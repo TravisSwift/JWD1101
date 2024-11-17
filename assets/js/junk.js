@@ -1,7 +1,9 @@
 "use strict";
 
- Math.random();
- console.log(Math.random());
+let health = new Map();
+health.set("weight", 195);
 
- Math.floor(Math.random() * 100);
- console.log(Math.floor(Math.random() * 100));
+health.set("age", 45);
+health.set("bloodPressure", "normal");
+
+console.log(health);
