@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Window</title>
+    <link rel="stylesheet" href="./assets/css/modal-project.css">
+</head>
+
+<body>
+    <!-- main web page  -->
+    <div>
+        <h1>Modal Windows</h1>
+        <p>A modal window is a web page element that displays in front of and deactivates all other content on the page.
+            In order to return the page's content, the user must either close the modal or perform some kind of task in the modal
+            window.
+        </p>
+
+        <p>Modal gets it's name because it creates a secondary "mode" that the user interface operates in.</p>
+
+        <p>A modal is different from a pop up in that the modal pervents the user from interacting with anything that is part of the 
+            main page's content, where as a pop-up on a page can be ignored by the user.
+        </p>
+
+        <p>Modals are most useful when you need to focus the user on an important message or force them into completing a action before 
+            continuing their browsing sessing on that page.
+        </p>
+        <button class="action" id="modal-btn">
+            Open modal
+        </button>
+    </div>
+    <!-- main web page  -->
+
+    <!-- modal -->
+    <div class="modal-container">
+        <div class="modal-content">
+            <h3>Please Consider Subscribing To Our Site.</h3>
+            <div>
+                <button class="subscribe" id="subscribe"> Subscribe </button>
+                <button class="cancel" id="close-btn">Close </button>
+            </div>
+  
+        </div>
+    </div>
+    <!-- end of modal -->
+    <script src="./assets/js/modal-project.js"></script>
+</body>
+
+</html>
